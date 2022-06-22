@@ -1,15 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .my-navbar {
   width: 100vw;
+  background-color: #171544;
 }
 
 .logo-img {
-  width: 5vw;
+  width: 6vw;
 }
 
 .container-fluid {
@@ -23,17 +26,25 @@
   display: flex;
 }
 .search-input-box {
-  margin-left: 30rem;
+  margin-left: 25rem;
   width: 30vw;
   height: 3.5vh;
 }
 
 .search-logo-div {
-  border: 1px solid black;
+  border: 1px solid white;
   width: 2.4rem;
   padding: 0.1rem;
 }
 
 .search-logo {
   width: 1.5vw;
+}
+
+.heading-meme {
+  width: 100vw;
+  background-color: #171544;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
