@@ -48,3 +48,19 @@
   text-align: center;
   padding: 1rem;
 }
+
+.memes-tags-part {
+  border: 1px solid black;
+  width: 80vw;
+  margin: auto;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+justify-content: space-evenly;
+}
+
+.tag-box {
+  border: 1px solid black;
+  width: 8%;
+  height: 80%;
+}
