@@ -15,3 +15,25 @@
 .container-fluid {
   gap: 1rem;
 }
+
+.d-flex {
+  gap: 1rem;
+}
+.nav-item {
+  display: flex;
+}
+.search-input-box {
+  margin-left: 30rem;
+  width: 30vw;
+  height: 3.5vh;
+}
+
+.search-logo-div {
+  border: 1px solid black;
+  width: 2.4rem;
+  padding: 0.1rem;
+}
+
+.search-logo {
+  width: 1.5vw;
+}
