@@ -50,17 +50,24 @@
 }
 
 .memes-tags-part {
-  border: 1px solid black;
+  background-color: #222052;
   width: 80vw;
   margin: auto;
-  height: 10rem;
   display: flex;
   align-items: center;
-justify-content: space-evenly;
+  justify-content: space-evenly;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .tag-box {
-  border: 1px solid black;
   width: 8%;
   height: 80%;
+}
+
+.small-img {
+  width: 100%;
+}
+
+.meme-parent-div {
+  background-color: #222052;
 }
