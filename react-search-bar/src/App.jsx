@@ -69,3 +69,6 @@ function App() {
 }
 
 export default App;
+
+
+// first run npm run json-server then you will see data
