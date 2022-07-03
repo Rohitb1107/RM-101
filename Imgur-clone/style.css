@@ -7,6 +7,7 @@
 }
 
 .main-content {
+  width: 100vw;
   background-color: #2e3035;
   padding-top: 2rem;
 }
@@ -74,13 +75,9 @@
 }
 
 .meme-parent-div {
-  background-color: #222052;
-}
+  width: 100vw;
 
-.categ {
-  font-size: 11px;
-  text-align: center;
-  color: #ffffff;
+  background-color: #222052;
 }
 #imgDiv {
   min-height: 500px;
@@ -96,11 +93,14 @@
   width: 240px;
   border: 1px solid transparent;
   background-color: #474a51;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .inflex {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  color: #8e929a;
+  color: white;
+  margin: 0.8rem;
 }
 
 .buttons {
