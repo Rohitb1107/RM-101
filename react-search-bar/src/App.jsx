@@ -17,7 +17,7 @@ function App() {
         console.log(err);
       });
   }
- 
+
   useEffect(() => {
     getData();
   }, []);
@@ -33,31 +33,39 @@ function App() {
       </div>
 
       <div className="search-div">
-        <input type="text" placeholder="Search..." onChange={changeHandler} />
-        {countryData.map((item) => {
-          return (
-            <div className="content-div">
-              <p>{item.country}</p>
-            </div>
-          );
-        })}
+        <form className="d-flex" role="search">
+          <input
+            onChange={changeHandler}
+            className="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button type="button" class="btn btn-info">
+            Search
+          </button>
+        </form>
+
+        {countryData
+          .filter((item) => {
+            if (searchItem == "") {
+              return;
+            } else if (
+              item.country.toLowerCase().includes(searchItem.toLowerCase())
+            ) {
+              return item;
+            }
+          })
+          .map((item) => {
+            return (
+              <div className="content-div">
+                <p>{item.country}</p>
+              </div>
+            );
+          })}
       </div>
     </div>
   );
 }
 
 export default App;
-
-{
-  /* <form className="d-flex" role="search">
-  <input
-    className="form-control me-2"
-    type="search"
-    placeholder="Search"
-    aria-label="Search"
-  />
-  <button type="button" class="btn btn-info">
-    Search
-  </button>
-</form>; */
-}
