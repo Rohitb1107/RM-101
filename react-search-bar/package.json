@@ -4,10 +4,12 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "json-server": "json-server --watch db.json --port 8080",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
