@@ -6,6 +6,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+.main-content {
+  background-color: #2e3035;
+  padding-top: 2rem;
+}
+
 .my-navbar {
   width: 100vw;
   background-color: #171544;
@@ -70,4 +75,51 @@
 
 .meme-parent-div {
   background-color: #222052;
+}
+
+.categ {
+  font-size: 11px;
+  text-align: center;
+  color: #ffffff;
+}
+#imgDiv {
+  min-height: 500px;
+  width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+#imgDiv > div {
+  margin: 10px;
+  margin-bottom: 20px;
+  height: 400px;
+  width: 240px;
+  border: 1px solid transparent;
+  background-color: #474a51;
+}
+.inflex {
+  display: flex;
+  justify-content: space-around;
+  color: #8e929a;
+}
+
+.buttons {
+  width: 200px;
+  height: 80px;
+  margin: auto;
+}
+.add {
+  background-color: #6432f9;
+  width: 95px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 12px;
+}
+.pro {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  margin-left: 5px;
 }
