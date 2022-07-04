@@ -1,11 +1,12 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import AllRoutes from "./Components/AllRoutes";
 
 function App() {
   return (
     <div className="App">
-      <h1>City Country</h1>
+      <AllRoutes />
     </div>
   );
 }

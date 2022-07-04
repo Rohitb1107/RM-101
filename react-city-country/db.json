@@ -1,0 +1,34 @@
+{
+  "citys": [
+    {
+      "id": 1,
+      "country": "India",
+      "city": "Delhi",
+      "population": "13588888"
+    },
+    {
+      "id": 2,
+      "country": "Australia",
+      "city": "Canberra",
+      "population": "193300000"
+    },
+    {
+      "id": 3,
+      "country": "Canada",
+      "city": "toronto",
+      "population": "3334453"
+    },
+    {
+      "id": 4,
+      "country": "Indonesia",
+      "city": "Jakarta",
+      "population": "78459642"
+    },
+    {
+      "id": 5,
+      "country": "United Kingdom",
+      "city": "London",
+      "population": "45789861"
+    }
+  ]
+}
