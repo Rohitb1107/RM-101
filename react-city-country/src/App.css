@@ -13,7 +13,7 @@
   font-size: 1.2rem;
 }
 
-.filter-div button{
+.filter-div button {
   margin-left: 1rem;
 }
 
@@ -26,4 +26,13 @@ td {
   border: 1px solid black;
   font-size: 1.5rem;
   padding: 1rem;
+}
+
+ul li {
+  margin-left: 1rem;
+}
+
+a {
+  text-decoration: underline;
+  color: white;
 }

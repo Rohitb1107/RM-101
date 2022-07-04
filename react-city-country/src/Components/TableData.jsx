@@ -35,28 +35,28 @@ const TableData = () => {
     <div className="filter-div">
       <button
         type="button"
-        class="btn btn-success"
+        className="btn btn-success"
         onClick={() => CountryFilter("asc", "country")}
       >
         ascending
       </button>
       <button
         type="button"
-        class="btn btn-success"
+        className="btn btn-success"
         onClick={() => CountryFilter("desc", "country")}
       >
         decending
       </button>
       <button
         type="button"
-        class="btn btn-info"
+        className="btn btn-info"
         onClick={() => CountryFilter("desc", "population")}
       >
         high to low
       </button>
       <button
         type="button"
-        class="btn btn-info"
+        className="btn btn-info"
         onClick={() => CountryFilter("asc", "population")}
       >
         low to high
@@ -81,14 +81,14 @@ const TableData = () => {
                 <td className="city">{e.city}</td>
                 <td className="population">{e.population}</td>
                 <td className="edit">
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" className="btn btn-primary">
                     Edit
                   </button>
                 </td>
                 <td className="delete">
                   <button
                     type="button"
-                    class="btn btn-danger"
+                    className="btn btn-danger"
                     onClick={() => {
                       Delete(e.id);
                     }}
