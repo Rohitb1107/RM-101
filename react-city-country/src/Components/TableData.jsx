@@ -33,14 +33,32 @@ const TableData = () => {
 
   return (
     <div className="filter-div">
-      <button onClick={() => CountryFilter("asc", "country")}>ascending</button>
-      <button onClick={() => CountryFilter("desc", "country")}>
+      <button
+        type="button"
+        class="btn btn-success"
+        onClick={() => CountryFilter("asc", "country")}
+      >
+        ascending
+      </button>
+      <button
+        type="button"
+        class="btn btn-success"
+        onClick={() => CountryFilter("desc", "country")}
+      >
         decending
       </button>
-      <button onClick={() => CountryFilter("desc", "population")}>
+      <button
+        type="button"
+        class="btn btn-info"
+        onClick={() => CountryFilter("desc", "population")}
+      >
         high to low
       </button>
-      <button onClick={() => CountryFilter("asc", "population")}>
+      <button
+        type="button"
+        class="btn btn-info"
+        onClick={() => CountryFilter("asc", "population")}
+      >
         low to high
       </button>
       <div className="table-div">
