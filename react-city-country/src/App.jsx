@@ -12,3 +12,7 @@ function App() {
 }
 
 export default App;
+
+
+// First run npm run dev
+// Then npm run json-server
