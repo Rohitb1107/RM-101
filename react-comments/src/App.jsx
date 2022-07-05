@@ -1,13 +1,15 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { Comments } from "./Components/Comments";
+import { Data } from "./data";
+import Navbar from "./Components/Navbar";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <h1>React Comments</h1>
+      <Navbar />
+      <Comments data={Data} />
     </div>
   );
 }
