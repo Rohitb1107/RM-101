@@ -1,42 +1,68 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+}
+.NavbarTop {
+  display: flex;
+  justify-content: space-around;
+}
+#login {
+  margin: auto;
+  width: 70%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#fllexd {
+  display: flex;
+  flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#navbar {
+  width: 22%;
+  border: 1px solid black;
+  word-wrap: normal;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#frontPage {
+  width: 70%;
+  margin: top;
+  padding: 20px;
+  border: 1px solid black;
+}
+.dflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  width: 70%;
+  margin: auto;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+#navbar > div:nth-child(1) {
+  height: 150px;
+  border: 1px solid black;
+}
+#navbar > div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid black;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+#navbar > div:nth-child(3) {
+  height: 150px;
+  border: 1px solid black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navbar > div:nth-child(4) {
+  padding: 10px;
+  border: 1px solid black;
+  margin: auto;
 }
-
-button {
-  font-size: calc(10px + 2vmin);
+#navbar > div:nth-child(4) button {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  border: none;
 }
