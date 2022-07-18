@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const shortId = require("shortid");
 
-// create schema
 const shortUrlSchema = new mongoose.Schema({
   full: {
     type: String,
@@ -19,10 +18,4 @@ const shortUrlSchema = new mongoose.Schema({
   },
 });
 
-// create collections
-// const ShortUrl = mongoose.model("ShortUrl", shortUrlSchema);
-
-// create documents
 module.exports = mongoose.model("ShortUrl", shortUrlSchema);
-
-// export model
