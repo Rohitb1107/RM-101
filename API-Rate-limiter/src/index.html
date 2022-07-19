@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS only -->
+    <style>
+      #weather-form {
+        display: flex;
+      }
+    </style>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,7 +21,9 @@
   <body>
     <br /><br />
     <div class="container">
-      <h1 class="text-center">Weather App</h1>
+      <h1 class="text-center">
+        Weather App : Get current weather of your city
+      </h1>
       <br /><br />
       <div class="weather text-center"></div>
       <br /><br />
@@ -31,7 +38,7 @@
           />
         </div>
         <div class="form-group container">
-          <button class="btn btn-danger btn-block">Get Current Weather</button>
+          <button class="btn btn-success btn-block">Get Weather</button>
         </div>
       </form>
     </div>
@@ -62,7 +69,7 @@
         }
         console.log(res.status);
         const data = await res.json();
-        console.log("datam", data);
+        console.log("data", data);
 
         const displayData = {
           // console.log("datam",data),
