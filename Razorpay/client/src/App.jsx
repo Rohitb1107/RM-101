@@ -15,7 +15,7 @@ function loadScript(src) {
   });
 }
 
-const _DEV_ = document.domain === "localhost";
+const __DEV__ = document.domain === "localhost";
 
 function App() {
   const [name, setName] = useState("Rohit");
@@ -37,7 +37,7 @@ function App() {
     console.log(data);
 
     const options = {
-      key: _DEV_ ? "rzp_test_4EbhRhsODRi47M" : "PRODUCTION_KEY",
+      key: __DEV__ ? "rzp_test_4EbhRhsODRi47M" : "PRODUCTION_KEY",
       currency: data.currency,
       amount: data.amount.toString(),
       order_id: data.id,
