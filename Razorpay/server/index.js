@@ -37,7 +37,7 @@ app.post("/verification", (req, res) => {
   } else {
     // pass it
   }
-  res.json({ status: "ok" });
+  res.json({ status: "ok" }); 
 });
 
 app.post("/razorpay", async (req, res) => {
