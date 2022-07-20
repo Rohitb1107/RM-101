@@ -1,34 +1,69 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+
+function loadScript(src) {
+  return new Promise((resolve) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.onload = () => {
+      resolve(true);
+    };
+    script.onerror = () => {
+      resolve(false);
+    };
+    document.body.appendChild(script);
+  });
+}
+
+const _DEV_ = document.domain === "localhost";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [name, setName] = useState("Rohit");
+
+  async function displayRazorpay() {
+    const res = await loadScript(
+      "https://checkout.razorpay.com/v1/checkout.js"
+    );
+
+    if (!res) {
+      alert("Razorpay SDK failed to load, Are you online?");
+      return;
+    }
+
+    const options = {
+      key: _DEV_ ? "rzp_test_4EbhRhsODRi47M" : "PRODUCTION_KEY",
+      amount: "50000",
+      currency: "INR",
+      name: "Payment",
+      description: "Thank you",
+      image: "http://localhost:8080/logo.svg",
+      order_id: "order_9A33XWu170gUtm",
+      handler: function (response) {
+        alert(response.razorpay_payment_id);
+        alert(response.razorpay_order_id);
+        alert(response.razorpay_signature);
+      },
+      prefill: {
+        name,
+        email: "stylishrb711@gmail.com",
+        contact: "7999999999",
+      },
+    };
+    const paymentObject = new window.Razorpay(options);
+    paymentObject.open();
+  }
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <header className="App-header">
+        <h2>Checkout page</h2>
+        <button className="App-link" onClick={displayRazorpay} target="_blank">
+          Payment
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
